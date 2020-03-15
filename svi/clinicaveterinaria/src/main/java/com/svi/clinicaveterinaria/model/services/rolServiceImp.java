@@ -5,20 +5,31 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.svi.clinicaveterinaria.model.dao.clienterepository;
+import com.svi.clinicaveterinaria.model.dao.rolRepository;
 import com.svi.clinicaveterinaria.model.entidad.Rol;
 
 @Service
-public class clienteServiceImp implements ClienteService {
+public class rolServiceImp implements rolService {
 	
 	@Autowired
-	clienterepository repository; 
-	
+	private rolRepository repository;
 
 	@Override
-	public List<Rol> findAll() {
+	public Iterable<Rol> GetAllrolNombre() {
 		return repository.findAll();
-		
 	}
 
-}
+	@Override
+	public Iterable<Rol> Getllusers() {
+		// TODO Auto-generated method stub
+		return null;
+	} 
+	
+	
+	
+	}
+
+
+
+
+

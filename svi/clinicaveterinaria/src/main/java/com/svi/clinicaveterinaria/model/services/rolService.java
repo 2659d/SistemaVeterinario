@@ -4,9 +4,13 @@ import java.util.List;
 
 import com.svi.clinicaveterinaria.model.entidad.Rol;
 
-public interface ClienteService {
+public interface rolService {
 	
-	public List<Rol> findAll();
+	public Iterable<Rol> Getllusers();
+
+	public Iterable<Rol> GetAllrolNombre();
+
+	
 	
 	
 }
