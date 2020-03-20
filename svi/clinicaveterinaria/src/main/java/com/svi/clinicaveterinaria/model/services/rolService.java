@@ -4,13 +4,16 @@ import java.util.List;
 
 import com.svi.clinicaveterinaria.model.entidad.Rol;
 
+
 public interface rolService {
 	
-	public Iterable<Rol> Getllusers();
-
-	public Iterable<Rol> GetAllrolNombre();
-
 	
+	public Rol get(long id);
+	public List<Rol> getAll();
+	public void	Post(Rol rol);
+	public void Put(Rol rol,long idRol);
+	public List<Rol> findAll();
+	public void delete(long idRol);
 	
 	
 }

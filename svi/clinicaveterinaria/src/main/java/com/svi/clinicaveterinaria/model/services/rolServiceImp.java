@@ -14,22 +14,43 @@ public class rolServiceImp implements rolService {
 	@Autowired
 	private rolRepository repository;
 
+	
 	@Override
-	public Iterable<Rol> GetAllrolNombre() {
-		return repository.findAll();
-	}
-
-	@Override
-	public Iterable<Rol> Getllusers() {
+	public List<Rol> findAll() {
 		// TODO Auto-generated method stub
 		return null;
-	} 
-	
-	
-	
+	}
+
+	@Override
+	public Rol get(long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Rol> getAll() {
+		return (List<Rol>) repository.findAll();
+	}
+
+	@Override
+	public void Post(Rol rol) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Put(Rol rol, long idRol) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(long idRol) {
+		// TODO Auto-generated method stub
+		
 	}
 
 
-
-
-
+	
+	
+	}

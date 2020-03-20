@@ -21,11 +21,18 @@ public class rolController {
 	
 	
 	@RequestMapping(value="/rol1", method = RequestMethod.GET)
-	public Iterable<Rol> obtenerListas(){
-		Iterable<Rol> nombreObjeto = ClienteService.GetAllrolNombre();
-		return nombreObjeto;
+	public List<Rol> iteras(){
+		Iterable<Rol> Objeto = ClienteService.getAll();
+		
+	return (List<Rol>) Objeto;
+		
 	}
-	
+
+	@RequestMapping(value="/rol2", method = RequestMethod.GET)
+	public List<Rol> Listas(){
+	List<Rol> nombreObjeto = ClienteService.findAll();
+	return nombreObjeto;
+	}
 }
 
 

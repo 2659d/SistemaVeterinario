@@ -14,7 +14,7 @@ import com.svi.clinicaveterinaria.model.entidad.Rol;
 @Repository
 public interface rolRepository extends CrudRepository<Rol, Long> {
 	
-	public Set<Rol> findByrolNombre(String rolNombre);
+	
 	
 	
 	}
